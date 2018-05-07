@@ -6,7 +6,7 @@ Bitcore
 
 Infrastructure to build Bitcoin and blockchain-based applications for the next generation of financial technology.
 
-**Note:** If you're looking for the Bitcore Library please see: https://github.com/bitpay/bitcore-lib
+**Note:** If you're looking for the Bitcore Library please see: https://github.com/bitpay/poliscore-lib
 
 ## Getting Started
 
@@ -35,7 +35,7 @@ transaction.sign(privateKey);
 
 ## Applications
 
-- [Node](https://github.com/bitpay/bitcore-node) - A full node with extended capabilities using Bitcoin Core
+- [Node](https://github.com/bitpay/polispay-node) - A full node with extended capabilities using Bitcoin Core
 - [Insight API](https://github.com/bitpay/insight-api) - A blockchain explorer HTTP API
 - [Insight UI](https://github.com/bitpay/insight) - A blockchain explorer web user interface
 - [Wallet Service](https://github.com/bitpay/bitcore-wallet-service) - A multisig HD service for wallets
@@ -46,7 +46,7 @@ transaction.sign(privateKey);
 
 ## Libraries
 
-- [Lib](https://github.com/bitpay/bitcore-lib) - All of the core Bitcoin primatives including transactions, private key management and others
+- [Lib](https://github.com/bitpay/poliscore-lib) - All of the core Bitcoin primatives including transactions, private key management and others
 - [Payment Protocol](https://github.com/bitpay/bitcore-payment-protocol) - A protocol for communication between a merchant and customer
 - [P2P](https://github.com/bitpay/bitcore-p2p) - The peer-to-peer networking protocol
 - [Mnemonic](https://github.com/bitpay/bitcore-mnemonic) - Implements mnemonic code for generating deterministic keys

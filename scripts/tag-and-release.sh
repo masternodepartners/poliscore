@@ -6,7 +6,7 @@ set -e
 insightApiDir="${HOME}/source/insight-api"
 insightUIDir="${HOME}/source/insight-ui"
 bitcoreDir="${HOME}/source/bitcore"
-bitcoreNodeDir="${HOME}/source/bitcore-node"
+bitcoreNodeDir="${HOME}/source/polispay-node"
 
 ###########################################################
 
@@ -17,7 +17,7 @@ bump_version () {
 }
 
 set_deps () {
-  sed -i '' -e "s/\"bitcore-node\"\: .*$/\"bitcore-node\"\: \"${shortTag}\",/g" package.json
+  sed -i '' -e "s/\"polispay-node\"\: .*$/\"polispay-node\"\: \"${shortTag}\",/g" package.json
   sed -i '' -e "s/\"insight-api\"\: .*$/\"insight-api\"\: \"${shortTag}\",/g" package.json
   sed -i '' -e "s/\"insight-ui\"\: .*$/\"insight-ui\"\: \"bitpay\/insight\#${tag}\"/g" package.json
 }
@@ -33,11 +33,11 @@ fi
 
 
 #############################################
-# bitcore-node
+# polispay-node
 #############################################
 function bitcoreNode() {
   echo ""
-  echo "Starting with bitcore-node..."
+  echo "Starting with polispay-node..."
   sleep 2
   pushd "${bitcoreNodeDir}"
 
@@ -58,7 +58,7 @@ function bitcoreNode() {
   fi
 
   echo ""
-  echo "Committing changes for bitcore-node..."
+  echo "Committing changes for polispay-node..."
   sleep 2
   git commit -S
 

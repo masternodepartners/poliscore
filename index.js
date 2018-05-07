@@ -1,5 +1,5 @@
 'use strict';
 
-var bitcore = require('bitcore-lib');
+var bitcore = require('poliscore-lib');
 
 module.exports = bitcore;

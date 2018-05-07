@@ -7,7 +7,7 @@ if (parseInt(process.version.split('.')[0].slice(1)) < 8) {
 }
 
 var path = require('path');
-var bitcored = require('bitcore-node/lib/cli/bitcored');
+var bitcored = require('polispay-node/lib/cli/bitcored');
 var servicesPath = path.resolve(__dirname, '../');
 var additionalServices = ['insight-api', 'insight-ui'];
 bitcored(servicesPath, additionalServices);
