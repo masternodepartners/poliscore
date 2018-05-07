@@ -6,7 +6,7 @@ Bitcore
 
 Infrastructure to build Bitcoin and blockchain-based applications for the next generation of financial technology.
 
-**Note:** If you're looking for the Bitcore Library please see: https://github.com/bitpay/poliscore-lib
+**Note:** If you're looking for the Bitcore Library please see: https://github.com/bitpay/dashcore-lib
 
 ## Getting Started
 
@@ -46,7 +46,7 @@ transaction.sign(privateKey);
 
 ## Libraries
 
-- [Lib](https://github.com/bitpay/poliscore-lib) - All of the core Bitcoin primatives including transactions, private key management and others
+- [Lib](https://github.com/bitpay/dashcore-lib) - All of the core Bitcoin primatives including transactions, private key management and others
 - [Payment Protocol](https://github.com/bitpay/poliscore-payment-protocol) - A protocol for communication between a merchant and customer
 - [P2P](https://github.com/bitpay/poliscore-p2p) - The peer-to-peer networking protocol
 - [Mnemonic](https://github.com/bitpay/poliscore-mnemonic) - Implements mnemonic code for generating deterministic keys

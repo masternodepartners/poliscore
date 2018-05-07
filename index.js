@@ -1,5 +1,5 @@
 'use strict';
 
-var poliscore = require('poliscore-lib');
+var poliscore = require('dashcore-lib');
 
 module.exports = poliscore;
