@@ -4,15 +4,15 @@ Requires=network.target
 
 [Service]
 Type=simple
-WorkingDirectory=/usr/opt/bitcore
-ExecStart=/usr/bin/bitcore-bitcoind -datadir=/home/bitcore/.bitcore/data/
+WorkingDirectory=/usr/opt/poliscore
+ExecStart=/usr/bin/poliscore-bitcoind -datadir=/home/poliscore/.poliscore/data/
 ExecReload=/bin/kill -HUP $MAINPID
 Restart=on-failure
 RestartSec=15
-User=bitcore
-ExecStartPre=/bin/mkdir -p /run/bitcore
-ExecStartPre=/bin/chown bitcore:bitcore /run/bitcore
-ExecStartPre=/bin/chmod 755 /run/bitcore
+User=poliscore
+ExecStartPre=/bin/mkdir -p /run/poliscore
+ExecStartPre=/bin/chown poliscore:poliscore /run/poliscore
+ExecStartPre=/bin/chmod 755 /run/poliscore
 PermissionsStartOnly=true
 TimeoutStopSec=300
 

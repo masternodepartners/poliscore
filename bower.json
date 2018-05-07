@@ -1,8 +1,8 @@
 {
-  "name": "bitcore",
-  "main": "./bitcore.min.js",
+  "name": "poliscore",
+  "main": "./poliscore.min.js",
   "version": "0.13.5",
-  "homepage": "http://bitcore.io",
+  "homepage": "http://poliscore.io",
   "authors": [
     "BitPay, Inc."
   ],
@@ -12,7 +12,7 @@
   ],
   "keywords": [
     "bitcoin",
-    "bitcore",
+    "poliscore",
     "btc",
     "satoshi"
   ],

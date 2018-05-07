@@ -1,5 +1,5 @@
 
 
-var bitcoreTasks = require('bitcore-build');
+var poliscoreTasks = require('poliscore-build');
 
-bitcoreTasks();
+poliscoreTasks();

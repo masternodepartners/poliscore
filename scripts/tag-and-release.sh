@@ -5,8 +5,8 @@ set -e
 
 insightApiDir="${HOME}/source/insight-api"
 insightUIDir="${HOME}/source/insight-ui"
-bitcoreDir="${HOME}/source/bitcore"
-bitcoreNodeDir="${HOME}/source/polispay-node"
+poliscoreDir="${HOME}/source/poliscore"
+poliscoreNodeDir="${HOME}/source/poliscore-node"
 
 ###########################################################
 
@@ -17,7 +17,7 @@ bump_version () {
 }
 
 set_deps () {
-  sed -i '' -e "s/\"polispay-node\"\: .*$/\"polispay-node\"\: \"${shortTag}\",/g" package.json
+  sed -i '' -e "s/\"poliscore-node\"\: .*$/\"poliscore-node\"\: \"${shortTag}\",/g" package.json
   sed -i '' -e "s/\"insight-api\"\: .*$/\"insight-api\"\: \"${shortTag}\",/g" package.json
   sed -i '' -e "s/\"insight-ui\"\: .*$/\"insight-ui\"\: \"bitpay\/insight\#${tag}\"/g" package.json
 }
@@ -33,13 +33,13 @@ fi
 
 
 #############################################
-# polispay-node
+# poliscore-node
 #############################################
-function bitcoreNode() {
+function poliscoreNode() {
   echo ""
-  echo "Starting with polispay-node..."
+  echo "Starting with poliscore-node..."
   sleep 2
-  pushd "${bitcoreNodeDir}"
+  pushd "${poliscoreNodeDir}"
 
   sudo rm -fr node_modules
   bump_version
@@ -58,7 +58,7 @@ function bitcoreNode() {
   fi
 
   echo ""
-  echo "Committing changes for polispay-node..."
+  echo "Committing changes for poliscore-node..."
   sleep 2
   git commit -S
 
@@ -183,13 +183,13 @@ function insightUi() {
 }
 
 #############################################
-# bitcore
+# poliscore
 #############################################
-function bitcore() {
+function poliscore() {
   echo ""
-  echo "Releasing bitcore..."
+  echo "Releasing poliscore..."
   sleep 2
-  pushd "${bitcoreDir}"
+  pushd "${poliscoreDir}"
 
   sudo rm -fr node_modules
   bump_version
@@ -210,7 +210,7 @@ function bitcore() {
   fi
 
   echo ""
-  echo "Committing changes for bitcore..."
+  echo "Committing changes for poliscore..."
   sleep 2
   git commit -S
 
@@ -243,10 +243,10 @@ echo "Assuming projects at ${HOME}/source..."
 
 releases="${2}"
 if [ -z "${releases}" ]; then
-  bitcoreNode
+  poliscoreNode
   insightApi
   insightUi
-  bitcore
+  poliscore
 else
   eval "${releases}"
 fi
