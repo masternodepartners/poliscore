@@ -1,6 +1,6 @@
 {
   "name": "poliscore",
-  "version": "5.0.3",
+  "version": "5.0.4",
   "description": "A platform to build bitcoin and blockchain-based applications.",
   "engines": {
     "node": ">=8.0.0"
@@ -37,8 +37,8 @@
   },
   "dependencies": {
     "poliscore-lib": "latest",
-    "poliscore-node": "5.0.1",
-    "insight-api": "polispay/insight-api",
+    "poliscore-node": "5.0.2",
+    "insight-api": "bitpay/insight#v5.0.0-beta.44",
     "insight-ui": "bitpay/insight#v5.0.0-beta.44"
   },
   "license": "MIT",
