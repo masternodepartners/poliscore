@@ -36,8 +36,8 @@
     "url": "https://github.com/bitpay/poliscore.git"
   },
   "dependencies": {
-    "poliscore-lib": "latest",
-    "poliscore-node": "latest",
+    "poliscore-lib": "polispay/bitcore-lib#polis",
+    "poliscore-node": "polispay/bitcore-node",
     "insight-api-polispay": "polispay/insight-api",
     "insight-ui": "bitpay/insight#v5.0.0-beta.44"
   },
