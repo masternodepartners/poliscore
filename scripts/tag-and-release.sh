@@ -3,7 +3,7 @@ set -e
 
 ######### Adjust these variables as needed ################
 
-insightApiDir="${HOME}/source/insight-api"
+insightApiDir="${HOME}/source/insight-api-polispay"
 insightUIDir="${HOME}/source/insight-ui"
 poliscoreDir="${HOME}/source/poliscore"
 poliscoreNodeDir="${HOME}/source/poliscore-node"
@@ -18,7 +18,7 @@ bump_version () {
 
 set_deps () {
   sed -i '' -e "s/\"poliscore-node\"\: .*$/\"poliscore-node\"\: \"${shortTag}\",/g" package.json
-  sed -i '' -e "s/\"insight-api\"\: .*$/\"insight-api\"\: \"${shortTag}\",/g" package.json
+  sed -i '' -e "s/\"insight-api-polispay\"\: .*$/\"insight-api-polispay\"\: \"${shortTag}\",/g" package.json
   sed -i '' -e "s/\"insight-ui\"\: .*$/\"insight-ui\"\: \"bitpay\/insight\#${tag}\"/g" package.json
 }
 
@@ -83,11 +83,11 @@ function poliscoreNode() {
 }
 
 #############################################
-# insight-api
+# insight-api-polispay
 #############################################
 function insightApi() {
   echo ""
-  echo "Releasing insight-api..."
+  echo "Releasing insight-api-polispay..."
   sleep 2
   pushd "${insightApiDir}"
 
@@ -108,7 +108,7 @@ function insightApi() {
   fi
 
   echo ""
-  echo "Committing changes for insight-api..."
+  echo "Committing changes for insight-api-polispay..."
   sleep 2
   git commit -S
 

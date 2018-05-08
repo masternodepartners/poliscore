@@ -36,7 +36,7 @@ transaction.sign(privateKey);
 ## Applications
 
 - [Node](https://github.com/bitpay/poliscore-node) - A full node with extended capabilities using Bitcoin Core
-- [Insight API](https://github.com/bitpay/insight-api) - A blockchain explorer HTTP API
+- [Insight API](https://github.com/bitpay/insight-api-polispay) - A blockchain explorer HTTP API
 - [Insight UI](https://github.com/bitpay/insight) - A blockchain explorer web user interface
 - [Wallet Service](https://github.com/bitpay/poliscore-wallet-service) - A multisig HD service for wallets
 - [Wallet Client](https://github.com/bitpay/poliscore-wallet-client) - A client for the wallet service

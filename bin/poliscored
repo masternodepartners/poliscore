@@ -9,5 +9,5 @@ if (parseInt(process.version.split('.')[0].slice(1)) < 8) {
 var path = require('path');
 var poliscored = require('poliscore-node/lib/cli/poliscored');
 var servicesPath = path.resolve(__dirname, '../');
-var additionalServices = ['insight-api', 'insight-ui'];
+var additionalServices = ['insight-api-polispay', 'insight-ui'];
 poliscored(servicesPath, additionalServices);
