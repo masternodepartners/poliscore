@@ -61,7 +61,7 @@ replace_vars "${root_dir}/scripts/debian/poliscore-polisd.conf" "$deb_dir/etc/in
 replace_vars "${root_dir}/scripts/debian/poliscore-polisd.service" "$deb_dir/etc/systemd/system/poliscore-polisd.service"
 chmod -vR 0755 "$deb_dir/DEBIAN/"
 
-log_title "Copying Bitcore"
+log_title "Copying Poliscore"
 
 app_dir="$deb_dir/usr/opt/poliscore"
 
@@ -77,7 +77,7 @@ ln -vs "../opt/poliscore/bin/poliscored"
 ln -vs "../opt/poliscore/node_modules/.bin/polisd" "poliscore-polisd"
 popd
 
-log_title "Installing Bitcore Modules"
+log_title "Installing Poliscore Modules"
 pushd "${app_dir}"
 VERIFY_BITCOIN_DOWNLOAD=1 npm install --production
 echo "Cleanup Node.js addon binaries before packaging:"

@@ -1,4 +1,4 @@
-Contributing to Bitcore
+Contributing to Poliscore
 =======
 
 We're working hard to make *poliscore* the most powerful JavaScript library for working with bitcoin. Our goal is to have *poliscore* be a library that can be used by anyone interested in bitcoin, and to level expertise differences with great design and documentation.
@@ -101,7 +101,7 @@ These should have a matching static method that can be used for instantiation:
 * `fromString` - Should be able to instantiate with output from `toString`
 * `fromBuffer` - Should likewise be able to instantiate from output from `toBuffer`
 
-`JSON.stringify` and `JSON.parse` are expected to be handled outside of the scope of Bitcore methods. For example, calling `JSON.stringify` on an Bitcore object will behave as expected and call `transaction.toJSON()` and then stringify it:
+`JSON.stringify` and `JSON.parse` are expected to be handled outside of the scope of Poliscore methods. For example, calling `JSON.stringify` on an Poliscore object will behave as expected and call `transaction.toJSON()` and then stringify it:
 
 ```javascript
 var transactionString = JSON.stringify(transaction);

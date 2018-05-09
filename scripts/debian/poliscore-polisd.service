@@ -1,5 +1,5 @@
 [Unit]
-Description=Bitcoin Core for Bitcore
+Description=Bitcoin Core for Poliscore
 Requires=network.target
 
 [Service]

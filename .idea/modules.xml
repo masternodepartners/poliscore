@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/bitcore.iml" filepath="$PROJECT_DIR$/.idea/bitcore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/poliscore.iml" filepath="$PROJECT_DIR$/.idea/poliscore.iml" />
     </modules>
   </component>
 </project>

@@ -1,4 +1,4 @@
-Bitcore
+Poliscore
 =======
 
 [![NPM Package](https://img.shields.io/npm/v/poliscore.svg?style=flat-square)](https://www.npmjs.org/package/poliscore)
@@ -6,7 +6,7 @@ Bitcore
 
 Infrastructure to build Bitcoin and blockchain-based applications for the next generation of financial technology.
 
-**Note:** If you're looking for the Bitcore Library please see: https://github.com/bitpay/poliscore-lib
+**Note:** If you're looking for the Poliscore Library please see: https://github.com/bitpay/poliscore-lib
 
 ## Getting Started
 
@@ -65,7 +65,7 @@ To get community assistance and ask for help with implementation questions, plea
 
 ## Security
 
-We're using Bitcore in production, as are [many others](http://poliscore.io#projects), but please use common sense when doing anything related to finances! We take no responsibility for your implementation decisions.
+We're using Poliscore in production, as are [many others](http://poliscore.io#projects), but please use common sense when doing anything related to finances! We take no responsibility for your implementation decisions.
 
 If you find a security issue, please email security@bitpay.com.
 
@@ -86,4 +86,4 @@ To verify signatures, use the following PGP keys:
 
 Code released under [the MIT license](https://github.com/bitpay/poliscore/blob/master/LICENSE).
 
-Copyright 2013-2017 BitPay, Inc. Bitcore is a trademark maintained by BitPay, Inc.
+Copyright 2013-2017 BitPay, Inc. Poliscore is a trademark maintained by BitPay, Inc.

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 if (parseInt(process.version.split('.')[0].slice(1)) < 8) {
-  throw new Error('Bitcore requires Node version 8 or higher.');
+  throw new Error('Poliscore requires Node version 8 or higher.');
 }
 
 var poliscore = require('poliscore-node/lib/cli/poliscore');
