@@ -36,9 +36,9 @@
     "url": "https://github.com/bitpay/poliscore.git"
   },
   "dependencies": {
-    "poliscore-lib": "polispay/bitcore-lib#polis",
-    "poliscore-node": "polispay/bitcore-node",
-    "insight-api-polispay": "polispay/insight-api",
+    "poliscore-lib": "polispay/poliscore-lib",
+    "poliscore-node": "polispay/poliscore-node",
+    "insight-api-polispay": "polispay/insight-api-polispay",
     "insight-ui": "bitpay/insight#v5.0.0-beta.44"
   },
   "license": "MIT",
